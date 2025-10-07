@@ -6,6 +6,7 @@ MYIP2="s/xxxxxxxxx/$MYIP/g";
 ANU=$(ip -o $ANU -4 route show to default | awk '{print $5}');
 
 # Install OpenVPN dan Easy-RSA
+mkdir -p /var/www/html
 apt install openvpn -y
 apt install openvpn easy-rsa -y
 apt install unzip -y
