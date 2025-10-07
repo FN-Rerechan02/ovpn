@@ -1,4 +1,7 @@
 #!/bin/bash
+
+domain=$(cat /etc/xray/domain)
+
 export DEBIAN_FRONTEND=noninteractive
 OS=`uname -m`;
 MYIP=$(wget -qO- icanhazip.com);
@@ -161,15 +164,15 @@ cp /etc/openvpn/client-udp-2200.ovpn /var/www/html/client-udp-2200.ovpn
     <ul>
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <p>TCP <span class="badge">Android/iOS/PC/Modem</span></p>
-        <a href="https://IP-ADDRESS/fn/client-tcp-1194.ovpn">Download</a>
+        <a href="https://IP-ADDRESS/rerechan/client-tcp-1194.ovpn">Download</a>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <p>UDP <span class="badge">Android/iOS/PC/Modem</span></p>
-        <a href="https://IP-ADDRESS/fn/client-udp-2200.ovpn">Download</a>
+        <a href="https://IP-ADDRESS/rerechan/client-udp-2200.ovpn">Download</a>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <p>ALL.zip <span class="badge">Android/iOS/PC/Modem</span></p>
-        <a href="https://IP-ADDRESS/fn/FN-Project.zip">Download</a>
+        <a href="https://IP-ADDRESS/rerechan/FN-Project.zip">Download</a>
       </li>
     </ul>
   </div>
